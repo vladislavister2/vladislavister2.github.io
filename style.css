@@ -1,145 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Courgette&family=Libre+Baskerville&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&family=Courgette&family=Libre+Baskerville&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
-.blocks{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.right-side{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 75%;
+.upper-container {
+  display: flex;
+  justify-content: space-between;
 }
-.left-side{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 22%;
+.left-block-upper {
+  background-color: #6DAD76;
+  flex-basis: 75%;
 }
-.middle{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 3%;
+.right-block-upper {
+  flex-basis: 20%;
 }
-
-.header-block{
-    background: #B3E79E;
-    flex-basis: 15hv;
+.left-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  flex-basis: 15%;
+  padding: 30px;
+  min-height: 110px;
 }
-.logo1{
-    font-family: "Play";
-    font-size: 30pt;
-    float: right;
-    padding: 2%;
-    padding-right: 5%;
+.header-left-text {
+  margin-left: 30px;
+  font-size: 7vh;
 }
-
-.main-block{
-    background: #6DAD89 ;
-    flex-basis: 70vh;
-    padding: 2%;
+.header-right-text {
+  margin-right: 30px;
 }
-.main-text-first{
-    font-family: "Play";
-    font-size: 14pt;
-    padding-bottom: 3%;
+.special-text {
+  background-color: white;
+  padding: 15px;
 }
-.main-text-second{
-    font-family: "Play";
-    font-size: 18pt;
-    padding-left: 3%;
-    padding-top: 3%;
+.left-block-body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 130px;
+  border: 2px solid blue;
+  min-height: calc(100vh - 252px);
 }
-.main-text-third{
-    font-family: "Play";
-    font-size: 18pt;
-    padding-left: 5%;
-    padding-top: 5%;
+.right-block-upper {
+  background-color: #94D09D;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
-.main-text-fourth{
-    font-family: "Play";
-    font-size: 18pt;
-    padding-left: 5%;
-    padding-top: 5%;
+.lower-container {
+  min-height: 140px;
+  display: flex;
+  justify-content: space-between;
 }
-.main-text-fifth{
-    font-family: "Play";
-    font-size: 18pt;
-    padding-left: 5%;
-    padding-top: 5%;
+.left-block-lower {
+  flex-basis: 75%;
 }
-.some-list{
-    font-family: "Play";
-    font-size: 14pt;
-    padding-left: 5%;
-    padding-top: 2%;
+.right-block-lower {
+  flex-basis: 20%;
 }
-.muhomor{
-       /* height: 504px;*/
-        width: 490px;
-        max-width: 100%;
-        height: auto;
+.left-block-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid yellow;
+  background-color: #A6D094;
+  height: 100%;
+  padding: 30px 70px;
 }
-
-
-.footer-block{
-    background: #B3E79E;
-    display: flex;
-    flex-direction: row;
-    flex-basis: 15hv;
+.right-block-footer {
+  background-color: #A6D085;
+  border: 2px solid paleturquoise;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 5px;
 }
-.logo2{
-    font-family: "Play";
-    font-size: 30pt;
-    padding-left: 4%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    flex-grow: 6;
+.menu {
+  align-items: center;
+  justify-content: center;
 }
-.text-in-footer{
-    font-family: "Play";
-    font-size: 12px;
-    padding: 2%;
-    padding-top: 3%;
-    flex-grow: 1;
-}
-
-.menu-block{
-    position: fixed;
-    background: #91C87B ;
-    top: 0;
-    min-height: 88%;
-    width: 22%;
-    flex-grow: 6;
-    list-style: none;
-}
-.menu-block a{
-    text-decoration: none;
-    outline: none;
-    display: block;
-    font-family: "Play";
-    font-size: 14pt;
-    padding: 12px;
-    letter-spacing: 1px;
-    padding-left: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-
-.info-block{
-    position: fixed;
-    top: 88%;
-    width: 22%;
-    left: 78%;
-    bottom: 0;
-    
-    background: #6D98AD;
-    font-family: Play;
-    font-size: 14px;
-    padding-left: 1%;
-    padding-top: 0.5%;
+.menu a{
+font-size: 100px
 }
